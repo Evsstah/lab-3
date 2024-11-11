@@ -123,6 +123,40 @@ public class Main {
         System.out.println("Попугай поет:");
         parrot.sing();
         System.out.println();
+
+        
+        // Задача 6.2
+        System.out.println("\nЗадача 6.2:");
+
+        // Ввод координат первой точки
+        System.out.print("Введите координату X для первой точки: ");
+        int x_1 = scanner.nextInt();
+        System.out.print("Введите координату Y для первой точки: ");
+        int y_1 = scanner.nextInt();
+        System.out.print("Введите координату Z для первой точки: ");
+        int z_1 = scanner.nextInt();
+
+        PointZ point_1 = new PointZ(x_1, y_1, z_1);
+
+        // Ввод координат второй точки
+        System.out.print("\nВведите координату X для второй точки: ");
+        int x_2 = scanner.nextInt();
+        System.out.print("Введите координату Y для второй точки: ");
+        int y_2 = scanner.nextInt();
+        System.out.print("Введите координату Z для второй точки: ");
+        int z_2 = scanner.nextInt();
+
+        PointZ point_2 = new PointZ(x_2, y_2, z_2);
+
+        // Вывод полученных точек
+        System.out.println("\nПолучившиеся точки:");
+        System.out.println(point_1);
+        System.out.println(point_2);
+
+        // Сравнение точек
+        boolean isEqual = point_1.equals(point_2);
+        System.out.println("\nСравнение точек:");
+        System.out.println("Равна ли точка " + point_1 + " точке " + point_2 + "?: " + isEqual);
         
     }
 
